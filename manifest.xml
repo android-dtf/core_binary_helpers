@@ -1,0 +1,33 @@
+<Items>
+    <Item type="module"
+          name="getbins"
+          version="1.0.0"
+          health="stable"
+          author="Jake Valletta (jakev)"
+          about="Pull all system binaries (/bin/sh) to project directory."
+          localName="getbins" />
+
+    <Item type="module"
+          name="getsyslibs"
+          version="1.0.0"
+          health="stable"
+          author="Jake Valletta (jakev)"
+          about="Get app system libraries off the device."
+          localName="getsyslibs" />
+
+    <Item type="module"
+          name="libinfo"
+          majorVersion="1.1.0"
+          health="stable"
+          author="Jake Valletta (jakev)"
+          about="Get information about a shared library (SO)."
+          localName="libinfo" />
+
+    <Item type="library"
+          name="PyElfTools"
+          about="Pure-python library for parsing ELF and DWARF"
+          version="1.0.0"
+          health="stable"
+          author="www.github.com/eliben"
+          localName="PyElfTools" />
+</Items>
