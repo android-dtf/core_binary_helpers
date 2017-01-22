@@ -32,6 +32,8 @@ print_info()
 	nm -D "${lib_name}" 2>/dev/null|grep "T Java_"
 }
 
+cd "${LAUNCH_DIR}"
+
 if [ "$1" == "-d" ] && [ ! -z "$2" ]; then
 
     dir=$2
