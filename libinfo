@@ -34,16 +34,16 @@ print_info()
 
 cd "${LAUNCH_DIR}"
 
-if [ "$1" == "-d" ] && [ ! -z "$2" ]; then
+if [ "$1" = "-d" ] && [ ! -z "$2" ]; then
 
     dir=$2
 
     if [ ! -d "${dir}" ]; then
         echo "Directory '${dir}' does not exist. Exiting."
-        exit -1
+        exit 1
     fi
 
-    for file in `find "${dir}"`; do
+    for file in $(find "${dir}"); do
         print_info "$file"
     done
 
